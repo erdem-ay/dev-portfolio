@@ -57,7 +57,11 @@ const projetcList = [
 const HomeProjects = () => {
   return (
     <Container maxWidth="lg" sx={{ p: 2 }}>
-      <Typography variant="h4" component="h2" sx={{ my: 2 }}>
+      <Typography
+        variant="h3"
+        component="h2"
+        sx={{ my: 4, display: "flex", justifyContent: "center" }}
+      >
         My Projects
       </Typography>
       <Grid container rowSpacing={1}>

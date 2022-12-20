@@ -4,7 +4,10 @@ import GradientLinkButton from "./GradientLinkButton";
 
 const Banner = () => {
   return (
-    <Container maxWidth="sm" sx={{ m: 2 }}>
+    <Container
+      maxWidth="sm"
+      sx={{ m:5, ml:25}}
+    >
       <Typography variant="h3" component="h2">
         FrontEnd Developer
       </Typography>

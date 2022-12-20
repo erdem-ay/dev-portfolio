@@ -4,6 +4,7 @@ import React from "react";
 const GradientLinkButton = ({ children, link, bg, sx }) => {
   return (
     <Link
+    target="_blank"
       sx={{
         m: 2,
         display: 'inline-block',

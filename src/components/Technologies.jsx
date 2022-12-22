@@ -4,11 +4,16 @@ import LinearProgress, {
 } from "@mui/material/LinearProgress";
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import JavascriptIcon from "@mui/icons-material/Javascript";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiReactjsLine } from "react-icons/ri";
 import { ImHtmlFive2 } from "react-icons/im";
+import { DiCss3 } from "react-icons/di";
+import { DiMaterializecss } from "react-icons/di";
+import { BiGitBranch } from "react-icons/bi";
+import { AiOutlineGithub } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
+import { CgEricsson } from "react-icons/cg";
+import { BsFillBootstrapFill } from "react-icons/bs";
 
 const techs = [
   {
@@ -37,35 +42,35 @@ const techs = [
     name: "CSS",
     level: "Advanced",
     percentage: 80,
-    icon: <JavascriptIcon fontSize="large" />,
+    icon: <DiCss3 fontSize="large" />,
   },
   {
     id: 5,
     name: "Material UI",
     level: "Advanced",
     percentage: 80,
-    icon: <JavascriptIcon fontSize="large" />,
+    icon: <DiMaterializecss fontSize="large" />,
   },
   {
     id: 6,
     name: "Git",
     level: "Regular",
     percentage: 60,
-    icon: <JavascriptIcon fontSize="large" />,
+    icon: <BiGitBranch fontSize="large" />,
   },
   {
     id: 7,
     name: "GitHub",
     level: "Regular",
     percentage: 60,
-    icon: <JavascriptIcon fontSize="large" />,
+    icon: <AiOutlineGithub fontSize="large" />,
   },
 ];
 
 const additionaltechs = [
   { id: 1, name: "TailwindCSS", icon: <SiTailwindcss fontSize="large" /> },
-  { id: 2, name: "SCSS", icon: <SiTailwindcss fontSize="large" /> },
-  { id: 3, name: "Bootstrap", icon: <SiTailwindcss fontSize="large" /> },
+  { id: 2, name: "SCSS", icon: <CgEricsson fontSize="large" /> },
+  { id: 3, name: "Bootstrap", icon: <BsFillBootstrapFill fontSize="large" /> },
 ];
 
 const Technologies = () => {

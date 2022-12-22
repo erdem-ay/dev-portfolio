@@ -23,12 +23,12 @@ const pages = [
 const socials = [
   {
     name: "Linkedin",
-    url: "https://www.linkedin.com/in/erdem-ay/",
+    url:process.env.REACT_APP_LINKEDIN ,
     icon: <LinkedInIcon sx={{ color: "inherit" }} />,
   },
   {
     name: "Github",
-    url: "https://github.com/erdem-ay",
+    url: process.env.REACT_APP_GITHUB,
     icon: <GitHubIcon sx={{ color: "inherit" }} />,
   },
 ];
@@ -83,7 +83,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              Erdem AY
+              { process.env.REACT_APP_NAME }
             </Typography>
           </NavLink>
 
@@ -154,7 +154,7 @@ function Navbar() {
                 textDecoration: "none",
               }}
             >
-              Erdem AY
+              { process.env.REACT_APP_NAME }
             </Typography>
           </Box>
           <Box

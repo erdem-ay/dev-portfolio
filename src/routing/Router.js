@@ -9,7 +9,10 @@ import Footer from "../components/Footer";
 const Router = () => {
   return (
     <BrowserRouter>
-      <Navbar style={{ minHeight: "10vh" }} />
+    <div style={{ minHeight: "10vh" }}>
+
+      <Navbar />
+    </div>
       <div style={{ minHeight: "80vh" }}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,7 +20,7 @@ const Router = () => {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
-      <Footer style={{ minHeight: "10vh" }} />
+      <Footer />
     </BrowserRouter>
   );
 };

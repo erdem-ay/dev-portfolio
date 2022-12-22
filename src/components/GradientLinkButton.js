@@ -1,10 +1,9 @@
 import { Link } from "@mui/material";
 import React from "react";
 
-const GradientLinkButton = ({ children, link, bg, sx }) => {
+const GradientLinkButton = ({ children, link, bg, sx, ...props }) => {
   return (
     <Link
-    target="_blank"
       sx={{
         m: 2,
         display: 'inline-block',
@@ -14,9 +13,11 @@ const GradientLinkButton = ({ children, link, bg, sx }) => {
         ...sx,
         borderRadius: "40px",
         background: bg,
+        
       }}
       href={link}
       color="inherit"
+      {...props}
     >
       {children}
     </Link>
